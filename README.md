@@ -1,0 +1,7 @@
+My chosen solution is to have a custom retry helper class that lives in a helper folder. Doing this makes it reusable across the solution - atm it is only used in the repository class but in future it could be used across the solution, if we had different entities for example. 
+
+The class logic retries the action a specified number of times with a specified delay, both are passed in as parameters to the method. It works by setting a max number of retries and then enters an infinite loop. This loop is exited when the method invoked works or the max retries is hit. In the catch block, we catch the exception, if any, such as network failure or the database having too many active connections. This increments the retryAttempts counter and logs the failure. To allow the system time to recover, it exponentially increases the amount of time between retries, starting with the delay passed in and doubling it each go round. It then uses thread.sleep to delay the action by the amount of time specified. 
+
+It improves system stability by automatically retrying the action invoked without need for the user to get involved. For UX purposes, it also means they dont see the failures occuring until it hits the specified max retries, which allows the system time to recover. And by increasing the time taken for each retry, it allows for the error to recover - for example a dropped connection will usually recover pretty quickly. 
+
+I also have tests included which makes sure that the retry mechanism works as intended. 

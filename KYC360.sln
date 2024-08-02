@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYC360", "KYC360\KYC360.csproj", "{E218FC06-173F-4651-B37C-0B84E3D19AB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KYC360.Tests", "KYC360.Tests\KYC360.Tests.csproj", "{A15CDA3B-8D92-412A-BFE3-813C4B11AB95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E218FC06-173F-4651-B37C-0B84E3D19AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E218FC06-173F-4651-B37C-0B84E3D19AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E218FC06-173F-4651-B37C-0B84E3D19AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E218FC06-173F-4651-B37C-0B84E3D19AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15CDA3B-8D92-412A-BFE3-813C4B11AB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15CDA3B-8D92-412A-BFE3-813C4B11AB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15CDA3B-8D92-412A-BFE3-813C4B11AB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15CDA3B-8D92-412A-BFE3-813C4B11AB95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
